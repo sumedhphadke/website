@@ -1,0 +1,9 @@
+section:
+  name: Now
+  id: now
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+summary: "Currently developing TheFanTab"

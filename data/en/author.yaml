@@ -1,0 +1,19 @@
+# some information about you
+name: "Sumedh Phadke"
+nickname: "Sumedh"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+# image: "images/author/john.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "sumedhphadke@gmail.com"
+  phone: "+919619721292"
+  github: sumedhphadke
+  linkedin: sumedhphadke
+
+# some summary about what you do
+summary:
+  - I am an Engineer
+  - I am a DevOps professional
+  - I am co-founder of TheFanTab
+  - I love building things
