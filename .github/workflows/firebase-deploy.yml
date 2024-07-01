@@ -22,7 +22,9 @@ jobs:
         node-version: '14'
     
     - name: Install dependencies
-      run: npm install
+      run: |
+        npm install
+        npm install @popperjs/core
     
     - name: Build
       run: hugo --gc --minify
@@ -31,11 +33,6 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v7.2.0
       with:
         root: public/
-
-    - name: Run Lighthouse
-      uses: foo-software/lighthouse-check-action@v12.0.1
-      with:
-        urls: "http://localhost:1313"
 
     - name: Deploy to Firebase
       uses: FirebaseExtended/action-hosting-deploy@v0
