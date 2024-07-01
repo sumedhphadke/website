@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -26,7 +26,17 @@ jobs:
     
     - name: Build
       run: hugo --gc --minify
-    
+
+    - name: HTML5 Validator
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: public/
+
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@v12.0.1
+      with:
+        urls: "http://localhost:1313"
+
     - name: Deploy to Firebase
       uses: FirebaseExtended/action-hosting-deploy@v0
       with:
