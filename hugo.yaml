@@ -13,15 +13,15 @@ module:
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
 
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  en:
-    languageName: English
-    weight: 1
-  de:
-    languageName: Deutsch
-    weight: 2
+# # Manage languages
+# # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+# languages:
+#   en:
+#     languageName: English
+#     weight: 1
+#   de:
+#     languageName: Deutsch
+#     weight: 2
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: bn
@@ -52,7 +52,7 @@ params:
   # GitHub repo URL of your site
   gitRepo: https://github.com/sumedhphadke/website
 
-  background: "images/name-of-your-background-image.jpg"
+  # background: "images/name-of-your-background-image.jpg"
 
   features:
     # Enable portfolio section

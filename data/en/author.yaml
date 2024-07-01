@@ -3,8 +3,8 @@ name: "Sumedh Phadke"
 nickname: "Sumedh"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
-# image: "images/author/john.png"
-# give your some contact information. they will be used in the footer
+image: "images/LinkedInEdit1.png"
+# # give your some contact information. they will be used in the footer
 contactInfo:
   email: "sumedhphadke@gmail.com"
   phone: "+919619721292"

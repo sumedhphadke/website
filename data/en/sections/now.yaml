@@ -1,9 +1,43 @@
 section:
   name: Now
-  id: now
+  id: projects
   enable: true
-  weight: 1
+  weight: 3
   showOnNavbar: true
-  template: sections/about.html
+  # hideTitle: false
 
-summary: "Currently developing TheFanTab"
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Personal
+  filter: "personal"
+
+# your projects
+projects:
+- name: Leaving Linedata
+  # logo: /images/sections/projects/kubernetes.png
+  role: career
+  timeline: "July 5th, 2024"
+  summary: After 9 years of Working with Linedata, this dream of a journey is coming to end.
+  tags: ["professional"]
+- name: Building TheFanTab
+  # logo: /images/sections/projects/kubernetes.png
+  role: Co-founder
+  timeline: "July 5th, 2024"
+  summary: Building TheFanTab, a Tribe77 Tech venture with my best friend.
+  tags: ["personal", "hobby"]
+- name: Studying the Gut-Microbiome
+  # logo: /images/sections/projects/kubernetes.png
+  role: self
+  timeline: "April 1st, 2024"
+  summary: After a lifelong struggle with gut-health, I am levels deep learning about the gut-microbiome.
+  tags: ["personal", "health"]
+# - name: Publishing Itineraries
+#   # logo: /images/sections/projects/kubernetes.png
+#   role: self
+#   timeline: "April 1st, 2024"
+#   summary: As a meticulous planner of trips, I will soon make public my past itineraries.
+#   tags: ["personal", "hobbies"]

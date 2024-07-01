@@ -1,0 +1,88 @@
+@use 'sass:map';
+
+$breakpoints: (
+    tiny: 320px,
+    small: 640px,
+    medium: 768px,
+    large: 1024px,
+    very-large: 1280px,
+    extra-large: 1536px,
+    ultra-large: 2560px,
+);
+
+// transitions
+$transition-duration: 0.3s;
+$transition-type: ease-out;
+
+// borders and shadows
+$box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+
+// themes
+$themes: (
+    'light': (
+        'accent-color': #0969da, // GitHub blue
+        'hover-over-accent-color': #1a7f37, // GitHub green
+        'text-over-accent-color': #ffffff,
+        'bg-primary': #ffffff,
+        'bg-primary-inverse': #0d1117, // GitHub dark background
+        'bg-secondary': #f6f8fa, // GitHub light gray
+        'bg-card': #ffffff,
+        'heading-color': #24292f, // GitHub dark gray
+        'text-color': #24292f, // GitHub dark gray
+        'inverse-text-color': #c9d1d9, // GitHub light text for dark mode
+        'muted-text-color': #57606a, // GitHub muted text
+        'inline-code-color': #d73a49, // GitHub red
+        'highlight-color': #fff8c5, // GitHub yellow highlight
+        'footer-color': #24292f, // GitHub dark gray
+    ),
+    'dark': (
+        'accent-color': #58a6ff, // GitHub blue for dark mode
+        'hover-over-accent-color': #3fb950, // GitHub green for dark mode
+        'text-over-accent-color': #ffffff,
+        'bg-primary': #0d1117, // GitHub dark background
+        'bg-primary-inverse': #ffffff,
+        'bg-secondary': #161b22, // GitHub darker gray for dark mode
+        'bg-card': #21262d, // GitHub border color for dark mode
+        'heading-color': #c9d1d9, // GitHub light text for dark mode
+        'text-color': #c9d1d9, // GitHub light text for dark mode
+        'inverse-text-color': #24292f, // GitHub dark gray
+        'muted-text-color': #8b949e, // GitHub muted text for dark mode
+        'inline-code-color': #ff7b72, // GitHub red for dark mode
+        'highlight-color': #2f1d03, // GitHub yellow highlight for dark mode
+        'footer-color': #161b22, // GitHub darker gray for dark mode
+    ),
+);
+
+$brand-colors: (
+    'facebook': #3b5998,
+    'twitter': #1da1f2,
+    'linkedin': #0077b5,
+    'reddit': #ff4500,
+    'tumblr': #35465c,
+    'pocket': #ef4056,
+    'diaspora': #1e1e1e,
+    'whatsapp': #25d366,
+);
+
+$alerts: (
+    'success': ( // green 100
+        'bg-color': #dcfce7,
+        // green 800
+        'text-color': #166534,
+    ),
+    'info': ( // sky 100
+        'bg-color': #e0f2fe,
+        // sky 800
+        'text-color': #075985,
+    ),
+    'warning': ( // yellow 100
+        'bg-color': #fef9c3,
+        // yellow 800
+        'text-color': #854d0e,
+    ),
+    'danger': ( // red 100
+        'bg-color': #fee2e2,
+        // red 800
+        'text-color': #991b1b,
+    ),
+);

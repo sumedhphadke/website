@@ -1,0 +1,49 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Cloud Computing
+  logo: /images/sections/skills/cloud.png
+  summary: "Worked with most of the major clouds such as AWS, Azure, GCP/Firebase etc."
+
+- name: Terraform
+  logo: /images/sections/skills/terraform.png
+  summary: "Developed reusable Terraform modules for infrastructure as code, simplifying maintenance and debugging of production environments."
+
+- name: DevOps
+  logo: /images/sections/skills/devops.png
+  summary: "Championed DevOps culture, establishing best practices for product teams. Experience with configuration management tools like Chef and Ansible."
+
+- name: Scripting & Automation
+  logo: /images/sections/skills/powershell.png
+  summary: "Proficient in writing PowerShell, Bash, and Python scripts to automate processes, improving efficiency and reducing manual tasks."
+
+- name: Monitoring & Observability
+  logo: /images/sections/skills/monitoring.png
+  summary: "Set up monitoring and alerting systems using tools like Elastic Heartbeat and Observe Inc. Evaluated various observability platforms."
+
+- name: .NET Development
+  logo: /images/sections/skills/netcore.png
+  summary: "Extensive experience in C#, .NET Core, Entity Framework, and related technologies for building robust applications."
+
+- name: Microservices & DDD
+  logo: /images/sections/skills/microservices.png
+  summary: "Implemented microservices architecture and Domain-Driven Design principles in various projects."
+
+
+- name: Databases
+  logo: /images/sections/skills/database.png
+  summary: "Experienced in working with SQL and SQL Server. Proficient in database design, optimization, and management for enterprise-level applications."
+
+- name: Agile & Scrum
+  logo: /images/sections/skills/agile.png
+  summary: "Practiced Agile methodologies and Scrum, mentoring team members and ensuring alignment with these principles."

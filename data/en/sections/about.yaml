@@ -3,7 +3,7 @@ section:
   name: About
   id: about
   enable: true
-  weight: 2
+  weight: 1
   showOnNavbar: true
   template: sections/about.html
 
@@ -15,10 +15,10 @@ company:
   url: "https://www.linedata.com/"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+resume: "files/Sumedh Phadke's Resume - DevOps.pdf.pdf"
 
 # a summary about you
-summary: "I am a software engineer with 9 years of working experience, passionate about delivering great software. I help engineers deliver their software"
+summary: "I am an Agile DevOps Engineer passionate about streamlining delivery pipelines and fostering collaboration. I optimize processes for rapid, reliable, and automated software deployments, driving efficiency in development teams."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
