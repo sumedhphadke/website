@@ -49,8 +49,8 @@ socialLinks:
     url: "https://www.facebook.com/sumedh02"
 
 resourceLinks:
-- title: "My resume"
-  url: "resume.pdf"
+  - title: "My Resume"
+    url: "files/Sumedh_Phadke_Resume_DevOps.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
