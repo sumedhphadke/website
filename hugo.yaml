@@ -52,7 +52,12 @@ params:
   # GitHub repo URL of your site
   gitRepo: https://github.com/sumedhphadke/website
 
-  # background: "images/name-of-your-background-image.jpg"
+  background: "images/sumedh_para.png"
+
+  logo:
+    main: images/logos/main-logo.png
+    inverted: images/logos/inverted-logo.png
+    favicon: images/logos/favicon.png
 
   features:
     # Enable portfolio section

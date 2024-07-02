@@ -1,0 +1,121 @@
+.home {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: get-light-color('text-over-accent-color');
+    overflow: hidden;
+  
+    .background {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-attachment: fixed;
+      background-position: center;
+      transform: scale(1.1);
+      // filter: blur(3px); // Removed blur effect
+      background-size: cover;
+    }
+  
+    .arrow-center {
+      display: flex;
+      justify-content: center;
+    }
+  
+    @supports (-webkit-touch-callout: none) {
+      .background {
+        background-attachment: scroll;
+      }
+    }
+  
+    .content {
+      position: relative;
+      top: -55%; // Adjusted from -65%
+      height: 70%; // Adjusted from 60%
+    }
+  
+    img {
+      width: 160px; // Increased from 148px
+      height: 160px; // Increased from 148px
+      border: 3px solid white; // Added border
+      box-shadow: 0 0 10px rgba(0,0,0,0.3); // Added shadow
+      margin-bottom: 10px;
+    }
+  
+    .greeting,
+    .greeting-subtitle {
+      color: get-light-color('text-over-accent-color');
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5); // Added text shadow
+    }
+  
+    .typing-carousel {
+      font-size: 16pt; // Increased from 14pt
+      color: get-light-color('text-over-accent-color');
+    //   background-color: rgba(0,0,0,0.5); // Added background
+      padding: 5px 10px; // Added padding
+      border-radius: 5px; // Added border radius
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  
+    #typing-carousel-data {
+      display: none;
+    }
+  
+    .arrow {
+      position: absolute;
+      color: get-light-color('text-over-accent-color');
+      font-size: 1.5rem;
+      bottom: 0;
+    }
+  
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+  
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-30px); }
+      60% { transform: translateY(-15px); }
+    }
+  
+    @include media('<=small') {
+      .content {
+        position: relative;
+        top: -65%; // Adjusted from -75%
+        height: 75%; // Adjusted from 65%
+      }
+  
+      img {
+        width: 140px;
+        max-width: 50%;
+        height: auto;
+      }
+  
+      .greeting {
+        font-size: 24pt;
+      }
+    }
+  }
+  
+  html[data-theme='dark'] {
+    .home {
+      color: get-dark-color('text-over-accent-color');
+      img {
+        background-color: get-dark-color('bg-secondary');
+      }
+  
+      .greeting,
+      .greeting-subtitle {
+        color: get-dark-color('text-over-accent-color');
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5); // Added text shadow for dark mode
+      }
+  
+      .typing-carousel {
+        color: get-dark-color('text-over-accent-color');
+        // background-color: rgba(255,255,255,0.2); // Added lighter background for dark mode
+      }
+      .arrow {
+        color: get-dark-color('text-over-accent-color');
+      }
+    }
+  }
