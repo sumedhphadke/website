@@ -27,6 +27,7 @@ projects:
 - name: Building TheFanTab
   # logo: /images/sections/projects/kubernetes.png
   role: Co-founder
+  url: https://www.thefantab.com
   timeline: "July 5th, 2024"
   summary: Building TheFanTab, a Tribe77 Tech venture with my best friend.
   tags: ["personal", "hobby"]

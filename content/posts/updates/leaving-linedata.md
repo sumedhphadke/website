@@ -1,7 +1,7 @@
 ---
 title: "Farewell to Linedata: A Journey of Growth and Gratitude"
 date: 2024-07-06T08:00:00+05:30
-hero: inedata-farewell.jpg
+hero: /images/updates/linedata-farewell.jpg
 menu:
   sidebar:
     name: Farewell to Linedata
