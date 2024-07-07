@@ -50,7 +50,7 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo URL of your site
-  gitRepo: https://github.com/sumedhphadke/website
+  # gitRepo: https://github.com/sumedhphadke/website
 
   background: "images/sumedh_para.png"
 
@@ -67,6 +67,20 @@ params:
     # Enable blog posts
     blog:
       enable: true
+      showAuthor: false
+
+    # # Share post on different social media
+    #   shareButtons:
+    #     facebook: true
+    #     twitter: true
+    #     linkedin: true
+    #     reddit: true
+    #     whatsapp: true
+    #     email: true
+    #     # tumblr: true
+    #     # pocket: true
+    #     # diaspora: true
+    #     # mastodon: true
 
     # Enable Table of contents in reading page
     toc:
