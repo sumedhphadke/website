@@ -104,12 +104,17 @@ params:
           inputPosition: top
           crossOrigin: anonymous
 
+        googleAnalytics: G-WG83E0R8VT
+
     analytics:
       enable: true
       services:
         # Google Analytics
         google:
           id: G-WG83E0R8VT
+
+# Enable Google Analytics
+googleAnalytics: G-WG83E0R8VT
 
 privacy:
   disqus:
