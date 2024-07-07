@@ -19,6 +19,7 @@ buttons:
 projects:
 - name: Leaving Linedata
   # logo: /images/sections/projects/kubernetes.png
+  url: /posts/updates/leaving-linedata/
   role: career
   timeline: "July 5th, 2024"
   summary: After 9 years of Working with Linedata, this dream of a journey is coming to end.
