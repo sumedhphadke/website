@@ -104,7 +104,8 @@ params:
           inputPosition: top
           crossOrigin: anonymous
 
-        googleAnalytics: G-WG83E0R8VT
+        googleAnalytics:
+          id: G-WG83E0R8VT
 
     analytics:
       enable: true
