@@ -1,8 +1,14 @@
+# Retired 2026-07-25. sumedhphadke.com is now served by a different site
+# (https://github.com/sumedhphadke/sumedhphadke.com), so this Hugo build must
+# no longer deploy to Firebase Hosting. The push trigger below is commented out
+# rather than removed so the old setup stays readable; the job can still be run
+# by hand via workflow_dispatch if anyone ever needs it.
 name: Deploy to Firebase Hosting
 
 on:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
