@@ -1,50 +1,14 @@
-# Retired 2026-07-25. sumedhphadke.com is now served by a different site
-# (https://github.com/sumedhphadke/sumedhphadke.com), so this Hugo build must
-# no longer deploy to Firebase Hosting. The push trigger below is commented out
-# rather than removed so the old setup stays readable; the job can still be run
-# by hand via workflow_dispatch if anyone ever needs it.
-name: Deploy to Firebase Hosting
+name: Firebase deployment (retired)
 
 on:
-  # push:
-  #   branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  retired:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
-    
-    - name: Install dependencies
-      run: |
-        npm install
-        npm install @popperjs/core
-    
-    - name: Build
-      run: hugo --gc --minify
-
-    # - name: HTML5 Validator
-    #   uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-    #   with:
-    #     root: public/
-    #     fail_on_error: false
-
-    - name: Deploy to Firebase
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-        channelId: live
-        projectId: personal-website-2c0fc
+      - run: echo "This site was replaced by sumedhphadke.com; Firebase deployment and secret access are disabled."
